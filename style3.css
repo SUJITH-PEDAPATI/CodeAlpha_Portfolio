@@ -1,0 +1,286 @@
+.education h1{
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.education h1::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background-color: #5f56e7;
+    display: block;
+    margin: 8px auto 0;
+    border-radius: 2px;
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f8f9fd;
+    padding: 40px 20px;
+    margin: 0;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+  }
+
+  .timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #6c5ce7;
+  }
+
+  .timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 80px;
+  }
+
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 22px;
+    top: 10px;
+    width: 16px;
+    height: 16px;
+    background: #6c5ce7;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  .card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  }
+
+  .job-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+
+  .company {
+    color: #555;
+    margin: 5px 0 10px;
+  }
+
+  .date-range {
+    float: right;
+    color: #6c5ce7;
+    font-weight: 500;
+  }
+
+  .description {
+    color: #333;
+    margin: 10px 0;
+  }
+
+  .tags {
+    margin-top: 10px;
+  }
+
+  .tag {
+    display: inline-block;
+    background: #eee;
+    color: #555;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin: 4px 6px 0 0;
+  }
+
+  /* skills */
+.head4{
+    font-size: 2.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+.head4::after{
+    content: "";
+    width: 80px;
+    height: 4px;
+    background-color: #5f56e7;
+    display: block;
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
+.para1{
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.twoforms{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+.twocolumns{
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  column-gap: 30px;
+}
+@media (max-width:768px){
+  .twoforms{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .twocolumns{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap:  30px;
+  }
+}
+.formone{
+  min-width: 2fr;
+  min-height: fit-content;
+  padding: 25px;
+  background-color: #333;
+  border-radius: 25px;
+}
+.icon-circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #EEF2FF 0%, #E0E7FF 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.icon-circle img {
+  width: 25px;
+  height: 25px;
+  color: #5f56e7;
+}
+.secondform{
+  min-width: 2fr;
+  min-height: fit-content;
+  padding: 25px;
+  border-radius: 25px;
+}
+.phone {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.email{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.location{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.socialmedia{
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+  border-color: #5f56e7;
+  outline: none;
+}
+
+.form-container textarea {
+  resize: vertical;
+}
+.form-container button{
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  background-color:#4f46e5;
+  border-radius: 10px ;
+  border: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+.secondform{
+  min-width: 2fr;
+  min-height: fit-content;
+  padding: 25px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.getintouch{
+  background-color:#f9fafb;
+}
+.final{
+  min-width: 100vw;
+
+}
+.foot{
+  font-weight: lighter;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  color: black;
+}
+.copyright p{
+  color: black;
+  text-align: center;
+  font-size: 12px;
+}
+.finalnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
